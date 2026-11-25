@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="top">
 
   <a href="#main" class="skip-link">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information Logo">
@@ -59,25 +59,29 @@
 
   <article>
     <h3>Wrap-up Resources:</h3>
-    <ul>
-<li><a href="https://docs.google.com/document/d/1mjyX6jgqXFrY7SFYaA3J2cTh1ZnHH0FKF5aUKfXzXKo/edit">How to Include Project Experience on Student Resumes</a> — translate client and course projects into resume experience.</li>
-<li><a href="https://docs.google.com/document/d/1jwQg_Y4jECLPHqcyOtJtDTK5x-68KstexfPbh6jXHnA/edit">How to Engage with UMSI on Social Media</a> — sharing milestones, tagging partners, and posting work on LinkedIn.</li>
-<li><a href="https://careercenter.umich.edu/content/interviewing-resources">STAR Method and interviewing resources</a> — University Career Center tools for interview stories about teamwork, conflict, and problem-solving.</li>
-    </ul>
+<details>
+  <summary>Show wrap-up resources</summary>
+  <ul>
+    <li><a href="https://docs.google.com/document/d/1mjyX6jgqXFrY7SFYaA3J2cTh1ZnHH0FKF5aUKfXzXKo/edit">How to Include Project Experience on Student Resumes</a> — translate client and course projects into resume experience.</li>
+    <li><a href="https://docs.google.com/document/d/1jwQg_Y4jECLPHqcyOtJtDTK5x-68KstexfPbh6jXHnA/edit">How to Engage with UMSI on Social Media</a> — sharing milestones, tagging partners, and posting work on LinkedIn.</li>
+    <li><a href="https://careercenter.umich.edu/content/interviewing-resources">STAR Method and interviewing resources</a> — University Career Center tools for interview stories about teamwork, conflict, and problem-solving.</li>
+  </ul>
+</details>
 </article>
 </section>
 
 <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a prep page using the ELO content below" - this was after I had asked for content for the home page. " UMGPT. (2026). UMGPT ( GPT-5.6 Sol September 7th version) [Large language model]. -->
 </main>
-<footer>
+    <footer>
+        <p><a href="#top">Back to top</a></p>
         <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
-
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
-
 </html>
-

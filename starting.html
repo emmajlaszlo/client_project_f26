@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="top">
 
   <a href="#main" class="skip-link">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information Logo">
@@ -49,14 +49,18 @@
 
     <h3>Starting resources</h3>
     <p>Use these for first contact and kickoff only. Preparation tools (identity snapshot, scoping, commitment form) stay on the Preparing page.</p>
-<ul>
-    <li><a href="https://docs.google.com/document/d/1fWFXwoW5fKX_Tctn97Gio5XZDwILNlqIOyKKE8Yk5J0/edit">Initial Client Email Examples</a> — plug-and-play templates for first contact with clients and partners.</li>
-    <li><a href="https://docs.google.com/document/d/1ItXxYauAcPoaGMUZWuJsX-OLFfGmeBOWT7JNhoZxGyU/edit?usp=drive_link">Initial Client Meeting Sample Agenda</a> — step-by-step structure for a professional kickoff call.</li>
-    <li><a href="https://ginsberg.umich.edu/article/campus-community-partnerships-toolkit">Ginsberg Center Student-Client Partnership Toolkit</a> — principles for reciprocal, respectful community relationships.</li>
-    <li><a href="https://drive.google.com/file/d/12ealxkKCvOZajxK7doyUXu_k2LyKPUP2/view">Student-Client Partnership Guide</a> — guidelines for managing expectations and deliverables.</li>
-    <li><a href="https://docs.google.com/spreadsheets/d/1YeK2WerSbhaU5hjEg9wxdXmzBx9lgRy2yHBKAH-SxiA/edit?gid=166831640#gid=166831640">SO-ELL Schedule</a> — milestones, deadlines, and submission dates.</li>
-    <li><a href="prep.html">Preparing for Your Experience</a> if you still need goals or team-readiness tools.</li>
-</ul></section>
+    <details>
+      <summary>Show starting resources</summary>
+      <ul>
+        <li><a href="https://docs.google.com/document/d/1fWFXwoW5fKX_Tctn97Gio5XZDwILNlqIOyKKE8Yk5J0/edit">Initial Client Email Examples</a> — plug-and-play templates for first contact with clients and partners.</li>
+        <li><a href="https://docs.google.com/document/d/1ItXxYauAcPoaGMUZWuJsX-OLFfGmeBOWT7JNhoZxGyU/edit?usp=drive_link">Initial Client Meeting Sample Agenda</a> — step-by-step structure for a professional kickoff call.</li>
+        <li><a href="https://ginsberg.umich.edu/article/campus-community-partnerships-toolkit">Ginsberg Center Student-Client Partnership Toolkit</a> — principles for reciprocal, respectful community relationships.</li>
+        <li><a href="https://drive.google.com/file/d/12ealxkKCvOZajxK7doyUXu_k2LyKPUP2/view">Student-Client Partnership Guide</a> — guidelines for managing expectations and deliverables.</li>
+        <li><a href="https://docs.google.com/spreadsheets/d/1YeK2WerSbhaU5hjEg9wxdXmzBx9lgRy2yHBKAH-SxiA/edit?gid=166831640#gid=166831640">SO-ELL Schedule</a> — milestones, deadlines, and submission dates.</li>
+        <li><a href="prep.html">Preparing for Your Experience</a> if you still need goals or team-readiness tools.</li>
+      </ul>
+    </details>
+</section>
 
 
 
@@ -66,15 +70,16 @@
 
 <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a prep page using the ELO content below" - this was after I had asked for content for the home page. " UMGPT. (2026). UMGPT ( GPT-5.6 Sol September 7th version) [Large language model]. -->
 </main>
-<footer>
+    <footer>
+        <p><a href="#top">Back to top</a></p>
         <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
-    
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
-
 </html>
-
